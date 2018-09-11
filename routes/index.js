@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var Twit = require('twit');
+var https = require("https");
+setInterval(function() {
+    https.get("https://tryitoutguy.herokuapp.com/");
+}, 300000);
 var countingT = 0
 var tweet = 
    [{"status":"Black guys who love to fuck and fuck good. If you're a hot black guy and want to fuck me at 2395."},
